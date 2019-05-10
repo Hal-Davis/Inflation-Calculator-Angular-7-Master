@@ -1,0 +1,45 @@
+
+ <h1>U.S Inflation Calculator</h1>
+<h3>The inflation calculator uses official records published by the U.S. Department of Labor Statistics.</h3>
+<h3>To compare a wage between 1913 and 2019 type a wage, a begining year and an ending year.</h3>
+
+<div class="row">
+<div class="col-2">
+
+</div>
+ <div class="col-6">
+  <form class="form">
+
+    <mat-form-field >
+        <input matInput type="text" class="form-control calcinput" id="WageOrPrice"
+        required
+        [(ngModel)]="WageOrPrice" name="WageOrPrice" maxlength="50" placeholder="If you made (type a wage) " >
+      </mat-form-field>
+      <br/>
+    <mat-form-field >
+        <input matInput type="text" class="form-control calcinput" id="StartYear"
+        required
+        [(ngModel)]="StartYear" name="StartYear" maxlength="4" placeholder="In (type a year)" >
+      </mat-form-field>
+      <br/>
+    <mat-form-field >
+      <input matInput type="text" class="form-control  calcinput" id="EndYear"
+      required
+      [(ngModel)]="EndYear" name="EndYear" maxlength="4" placeholder="in (enter a year to compair to)" >
+    </mat-form-field>
+    <br/>
+    <button mat-Button color="primary" (click)="getwageorpriceEvent()">
+        Calculate
+    </button>
+    <br/>
+    <br/>
+    <p class="calcOutput"> {{CalculationText}}  {{CalculatedWageorPrice}} </p>
+
+  </form>
+</div>
+<div class="col-2">
+
+</div>
+</div>
+<h4><a  class="calcinput" target="_blank" href='https://www.bls.gov/cpi/data.htm'>You can download the data used in this application and more from
+  the department of labor statistics by clicking on this link.</a></h4>
