@@ -1,5 +1,6 @@
 # Inflation-Calculator-Angular-7-Master
-# Inf
+# InThis aplication uses a web API written in C# .net core and an sql database. 
+#To download the dependencies go to www.hal-davis.com and follow the links to the individuel repositories.
 Run 'npm update' to restore packages
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
